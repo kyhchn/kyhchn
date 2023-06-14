@@ -6,7 +6,14 @@ import 'aos/dist/aos.css'
 import { useEffect } from "react"
 import ProjectItem from "@/components/projectItem"
 import TechStack from "@/components/techStack"
+import SocialButton from "@/components/socialButton"
 export default function Home() {
+  const socialButtons = [
+    { src: '/github.svg', alt: 'GitHub', uri: 'https://github.com/kyhchn' },
+    { src: '/linkedin.svg', alt: 'LinkedIn', uri: 'https://www.linkedin.com/in/alvinkn/' },
+    { src: '/instagram.svg', alt: 'Instagram', uri: 'https://www.instagram.com/vvinalvinn/' },
+    { src: '/gmail.svg', alt: 'Gmail', uri: 'mailto:alvinkn.dev@gmail.com' }
+  ];
   useEffect(() => {
     AOS.init({
       duration: 1000
@@ -22,19 +29,15 @@ export default function Home() {
             <p className="text-base text-black mt-3" data-aos='zoom-in' >
               I am into  <span className="text-red-700 text-2xl">Front End Development</span>
             </p>
-            <div className="flex mt-5" data-aos='fade-up'>
-              <button className="social-button hover:bg-slate-500 text-white font-bold rounded-full p-2 h-12 w-12 relative">
-                <img className="w-full h-full" src="/github.svg" alt="GitHub" />
-              </button>
-              <button className="social-button hover:bg-slate-500 text-white font-bold rounded-full p-2 h-12 w-12 relative">
-                <img className="w-full h-full" src="/linkedin.svg" alt="GitHub" />
-              </button>
-              <button className="social-button hover:bg-slate-500 text-white font-bold rounded-full p-2 h-12 w-12 relative">
-                <img className="w-full h-full" src="/instagram.svg" alt="GitHub" />
-              </button>
-              <button className="social-button hover:bg-slate-500 text-white font-bold rounded-full p-2 h-12 w-12 relative">
-                <img className="w-full h-full" src="/gmail.svg" alt="GitHub" />
-              </button>
+            <div className="flex mt-5 gap-3" data-aos="fade-up">
+              {socialButtons.map((button, index) => (
+                <SocialButton
+                  key={index}
+                  src={button.src}
+                  alt={button.alt}
+                  uri={button.uri}
+                />
+              ))}
             </div>
           </div>
 
