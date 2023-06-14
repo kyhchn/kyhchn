@@ -18,7 +18,7 @@ export default function Home() {
         <div className="flex h-screen bg-white items-center p-20 pr-0 bg-red-700">
           <div className="flex-1 text-5xl font-bold text-blue-900" data-aos='fade-right'>
             <h1> Hi There, <br />
-              I'm <span className="text-purple-400">Alvin Kamal Nasich</span></h1>
+              Im <span className="text-purple-400">Alvin Kamal Nasich</span></h1>
             <p className="text-base text-black mt-3" data-aos='zoom-in' >
               I am into  <span className="text-red-700 text-2xl">Front End Development</span>
             </p>
