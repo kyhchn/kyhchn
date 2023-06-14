@@ -14,6 +14,8 @@ export default function Page() {
         if (storedToken) {
             setToken(storedToken);
             fetchTopTracks(storedToken);
+        } else {
+            router.replace('/auth');
         }
     }, []);
     async function fetchTopTracks(token: string) {
