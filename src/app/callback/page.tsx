@@ -13,7 +13,7 @@ async function getAccessToken(code: string, state: string) {
     const response = await fetch('https://accounts.spotify.com/api/token', {
         method: 'POST',
         headers: {
-            'Authorization': authHeader,
+            'Authorization': authHeader,    
             'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: new URLSearchParams({

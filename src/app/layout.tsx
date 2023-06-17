@@ -1,7 +1,7 @@
 import Nav from '@/components/nav'
 import './globals.css'
-import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
+import { Poppins } from 'next/font/google'
+const poppins = Poppins({ weight: ["500", "600", "700", "800", "900"], subsets: ["latin"] })
 
 export const metadata = {
   title: 'Portofolio',
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='scroll-smooth'>
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <Nav />
         {children}
       </body>
