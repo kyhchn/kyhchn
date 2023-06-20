@@ -11,8 +11,7 @@ export default function TrackItem({ artist }: TrackItemProps) {
                     <Image src={artist.images[0].url} alt={artist.name} fill objectFit="cover" />
                 </div>
                 <div className="flex flex-col justify-between">
-                    <span className="bg-clip-text font-bold text-xl text-transparent bg-gradient-to-r from-pink-500 to-violet-500">{artist.name}</span>
-
+                    <span className="bg-clip-text font-bold text-base md:text-xl text-transparent bg-gradient-to-r from-pink-500 to-violet-500">{artist.name}</span>
                 </div>
             </div>
 

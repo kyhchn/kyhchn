@@ -62,7 +62,7 @@ export default function Page() {
     }
     return (
 
-        <div className='grid grid-cols-2 px-5 py-4 gap-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 px-5 py-4 gap-10'>
             <div className=''>
                 <span className="bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-6xl font-bol cursor-pointer hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 ease-in duration-75" data-aos='fade-down' data-aos-duration='fade-up'>
                     {'Top ' + selectedType}

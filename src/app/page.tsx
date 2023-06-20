@@ -22,14 +22,14 @@ export default function Home() {
   return (
     <>
       <section id="about-me">
-        <div className="flex h-screen bg-white items-center p-20 pr-0 bg-red-700">
-          <div className="flex-1 text-5xl font-bold text-blue-900" data-aos='fade-right'>
+        <div className="flex h-[75vh] md:h-screen flex-col gap-3 md:flex-row bg-white items-center p-10 md:p-20">
+          <div className="md:flex-1 text-2xl md:text-5xl font-bold text-blue-900" data-aos='fade-right'>
             <h1> Hi There, <br />
               Im <span className="text-purple-400">Alvin Kamal Nasich</span></h1>
             <p className="text-base text-black mt-3" data-aos='zoom-in' >
-              I am into  <span className="text-red-700 text-2xl">Front End Development</span>
+              I am into  <span className="text-red-700 md:text-2xl">Front End Development</span>
             </p>
-            <div className="flex mt-5 gap-3" data-aos="fade-up">
+            <div className="flex mt-5 gap-3 justify-center md:justify-start" data-aos="fade-up">
               {socialButtons.map((button, index) => (
                 <SocialButton
                   key={index}
@@ -41,9 +41,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex-1 flex h-screen px-2 items-center" data-aos='fade-left'>
-            <div className="h-3/4 w-9/12 relative">
-              <Image src="/alvin.png" alt="hero" fill objectFit="cover" />
+          <div className="flex-1 px-2 md:h-screen w-full" data-aos='fade-left'>
+            <div className="h-full w-full md:w-5/6 relative justify-center">
+              <Image src="/alvin.png" alt="hero" fill objectFit="contain" />
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function Home() {
           <div className="text-white text-4xl mb-5 text-center" data-aos="zoom-out">
             <h1>My Projects</h1>
           </div>
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {projects.map((project, index) => (
               <ProjectItem
                 key={index}
@@ -75,17 +75,15 @@ export default function Home() {
           <div className="text-black text-4xl mb-5 text-center" data-aos="zoom-out">
             <h1>Tech Stack</h1>
           </div>
-          <div className="grid grid-cols-5" data-aos="flip-up">
+          <div className="grid grid-cols-2 md:grid-cols-5" data-aos="flip-up">
             <TechStack image="https://storage.googleapis.com/cms-storage-bucket/4fd5520fe28ebf839174.svg" stack="Flutter" />
             <TechStack image="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg" stack="Firebase" />
             <TechStack image="https://laravel.com/img/logomark.min.svg" stack="Laravel" />
             <TechStack image="/next.svg" stack="Next JS" />
             <TechStack image="/tailwind.svg" stack="Tailwind" />
-            <div></div>
             <TechStack image="https://railway.app/brand/logo-dark.svg" stack="Railway" />
             <TechStack image="/github.svg" stack="Github" />
             <TechStack image="https://wiki.postgresql.org/images/a/a4/PostgreSQL_logo.3colors.svg" stack="PostgreSQL" />
-            <div></div>
           </div>
         </div>
       </section>
