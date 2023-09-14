@@ -41,7 +41,7 @@ function Callback({ searchParams }: { searchParams: { code: string, state: strin
                 const token = await getAccessToken(searchParams.code, searchParams.state);
                 secureLocalStorage.setItem('accessToken', token)
                 console.log('token', token)
-                router.push('/dashboard')
+                router.push('/shewaspotifygurl')
             } catch (error) {
                 console.error('Error:', error);
             }

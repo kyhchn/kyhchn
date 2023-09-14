@@ -93,11 +93,12 @@ export default function Home() {
             {projects.map((project, index) => (
               <ProjectItem
                 key={index}
-                href={project.href}
+                mockup={project.mockup}
                 img={project.img}
                 title={project.title}
                 desc={project.desc}
                 alt={project.alt}
+                repo={project.repo}
                 aosData={index % 2 == 0 ? "fade-right" : "fade-left"}
               />
             ))}

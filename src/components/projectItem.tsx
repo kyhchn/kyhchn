@@ -1,21 +1,27 @@
 import Link from "next/link";
+import SocialButton from "./socialButton";
 
 type ProjectItemProps = {
-  href: string;
   img: string;
   title: string;
   desc: string;
   alt: string;
   aosData: string;
+  repo: string;
+  mockup: string;
 };
 
-export default function ProjectItem(props: ProjectItemProps) {
-  const { href, img, title, desc, aosData, alt } = props;
-
+export default function ProjectItem({
+  img,
+  title,
+  desc,
+  alt,
+  aosData,
+  repo,
+  mockup,
+}: ProjectItemProps) {
   return (
-    <Link
-      href={href}
-      passHref
+    <div
       className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 px-3"
       data-aos={aosData}
     >
@@ -31,7 +37,11 @@ export default function ProjectItem(props: ProjectItemProps) {
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
           {desc}
         </p>
+        <div className="flex flex-row justify-center md:justify-start items-center">
+          <SocialButton alt="github" src="/github.svg" uri={repo} />
+          <SocialButton alt="github" src="/web.png" uri={mockup} />
+        </div>
       </div>
-    </Link>
+    </div>
   );
 }
