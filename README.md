@@ -1,11 +1,13 @@
 <h1 align="center">Hi 👋, I'm Alvin Kamal Nasich</h1>
 <h3 align="center">A passionate frontend developer from Indonesia</h3>
 
-- 🌱 I’m currently learning **React, Next, and Go**
+- 🌱 I’m currently learning **Flutter, React, Next, and Go**
 
 - 👨‍💻 All of my projects are available at [shewaspotifygurl.com](shewaspotifygurl.com)
 
 - 📫 How to reach me **alvinkn.dev@gmail.com**
+
+- ⚡ Fun fact **I'm a professional deadliner**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
