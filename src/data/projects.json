@@ -1,5 +1,20 @@
 [
   {
+    "mockup": "https://kampungbudayaub.org/",
+    "img": "/kampung-budaya.png",
+    "title": "Kampung Budaya 2023",
+    "desc": "Website for Kampung Budaya 2023 event",
+    "alt": "kampung-budaya"
+  },
+  {
+    "mockup": "https://drive.google.com/file/d/1l4rcaqSI8QjA_DWThr6mlkj5GuHRBCrT/view?usp=sharing",
+    "img": "/ecosan-logo.png",
+    "title": "Ecosan",
+    "desc": "App to help people improve their water sanitation quality, with features like scan water quality, trash exchange, and some gamification (android)",
+    "alt": "ecosan",
+    "repo": "https://github.com/whoisgalih/ecosan"
+  },
+  {
     "mockup": "/shewaspotifygurl",
     "img": "https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png",
     "title": "She was spotify gurl",
@@ -8,15 +23,7 @@
     "repo": "https://github.com/kyhchn/kyhchn"
   },
   {
-    "mockup": "https://drive.google.com/file/d/1QwepJWqoouckysT2GdjaexC4fevA70x6/view?usp=share_link",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
-    "title": "Sicker",
-    "desc": "App to make your own whatsapp sticker and share to your friends (android) (api down)",
-    "alt": "sicker",
-    "repo": "https://github.com/kyhchn/Freepass-FE-2023/tree/sicker"
-  },
-  {
-    "mockup": "https://drive.google.com/file/d/1QzBr5wbmcSzH9PLOaGHCa_2HWWl26B-_/view?usp=share_link",
+    "mockup": "https://drive.google.com/file/d/1LJhT9UD2hV0rqnfIAnR_MvKMfkcr0Qc8/view?usp=sharing",
     "img": "https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png",
     "title": "Topify",
     "desc": "Get your spotify top tracks and artists (android)",
@@ -24,7 +31,7 @@
     "repo": "https://github.com/kyhchn/topify"
   },
   {
-    "mockup": "https://drive.google.com/file/d/1tHQDrFcbH3KXHracwpsBucEo5cO8F2O-/view",
+    "mockup": "https://drive.google.com/file/d/1EXvNVv9D8Y8UfI1Q-7V4eZ0AfUgV4dpQ/view?usp=sharing",
     "img": "/plant.png",
     "title": "Ecoplants",
     "desc": "An Ecommerce application for selling decorative plants (android) (api down)",

@@ -7,7 +7,7 @@ type ProjectItemProps = {
   desc: string;
   alt: string;
   aosData: string;
-  repo: string;
+  repo?: string;
   mockup: string;
 };
 
@@ -38,7 +38,7 @@ export default function ProjectItem({
           {desc}
         </p>
         <div className="flex flex-row justify-center md:justify-start items-center">
-          <SocialButton alt="github" src="/github.svg" uri={repo} />
+          {repo && <SocialButton alt="github" src="/github.svg" uri={repo} />}
           <SocialButton alt="github" src="/web.png" uri={mockup} />
         </div>
       </div>

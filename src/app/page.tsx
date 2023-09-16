@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <>
       <section id="about-me">
-        <div className="flex h-[75vh] md:h-screen flex-col gap-3 md:flex-row bg-white items-center p-10 md:p-20">
+        <div className="flex h-[75vh] md:h-screen flex-col gap-3 md:flex-row bg-white items-center p-5 md:p-20">
           <div
             className="md:flex-1 text-2xl md:text-5xl font-bold text-blue-900"
             data-aos="fade-right"
@@ -48,13 +48,16 @@ export default function Home() {
                 Front End Development
               </span>
             </p>
-            <div className="flex flex-col text-black" data-aos="zoom-in">
-              <div className="flex flex-row text-base gap-3 items-center">
-                <TbSchool className="w-8 h-8" />
+            <div
+              className="flex flex-col text-black text-start"
+              data-aos="zoom-in"
+            >
+              <div className="flex flex-row justify-start md:text-base text-sm gap-4 items-center">
+                <TbSchool size={30} />
                 <p>Information System student at Brawijaya University</p>
               </div>
-              <div className="flex flex-row text-base gap-3 items-center">
-                <FaLocationDot className="w-8 h-8" />
+              <div className="flex flex-row md:text-base justify-start text-sm gap-4 items-center">
+                <FaLocationDot size={30} />
                 <p>Indonesia</p>
               </div>
             </div>
