@@ -7,6 +7,14 @@
     "alt": "kampung-budaya"
   },
   {
+    "mockup": "https://helpmeh.vercel.app",
+    "img": "/sticky-notes.png",
+    "title": "Helpmeh",
+    "desc": "Note-taking apps embedded with AI for autocomplete and image generation",
+    "alt": "helpmeh",
+    "repo": "https://github.com/kyhchn/helpmeh"
+  },
+  {
     "mockup": "https://drive.google.com/file/d/1l4rcaqSI8QjA_DWThr6mlkj5GuHRBCrT/view?usp=sharing",
     "img": "/ecosan-logo.png",
     "title": "Ecosan",

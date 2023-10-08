@@ -146,6 +146,22 @@ export default function Home() {
               image="https://upload.wikimedia.org/wikipedia/commons/9/98/Solidity_logo.svg"
               stack="Solidity"
             />
+            <TechStack
+              image="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+              stack="React JS"
+            />
+            <TechStack
+              image="https://upload.wikimedia.org/wikipedia/commons/5/5e/Vercel_logo_black.svg"
+              stack="Vercel"
+            />
+            <TechStack
+              image="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg"
+              stack="Docker"
+            />
+            <TechStack
+              image="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg"
+              stack="Linux"
+            />
           </div>
         </div>
       </section>
