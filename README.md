@@ -3,7 +3,7 @@
 
 - 🌱 I’m currently learning **Flutter, React, Next, and Go**
 
-- 👨‍💻 All of my projects are available at [kyhchn.vercel.app](kyhchn.vercel.app)
+- 👨‍💻 All of my projects are available at [kyhchn.vercel.app](https://kyhchn.vercel.app)
 
 - 📫 How to reach me **alvinkn.dev@gmail.com**
 
