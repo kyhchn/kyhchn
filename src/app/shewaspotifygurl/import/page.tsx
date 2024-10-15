@@ -34,7 +34,8 @@ export default function Page() {
 
             if (response.ok) {
                 const data: Tracks = await response.json();
-                const firstData = data.items.pop();
+                const firstData = data.items.shift();
+                console.log(firstData);
                 if (firstData) {
                     trackIds.push(firstData.id);
                 } else {
