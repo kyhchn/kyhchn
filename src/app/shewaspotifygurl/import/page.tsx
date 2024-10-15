@@ -1,8 +1,9 @@
 'use client';
 import { Tracks } from '@/models/Tracks';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaLinode } from 'react-icons/fa6';
 import secureLocalStorage from 'react-secure-storage';
+import { useRouter } from 'next/navigation';
 
 export default function Page() {
     const [loading, setLoading] = useState<boolean>(false);
@@ -10,9 +11,10 @@ export default function Page() {
     const [resultIds, setResultIds] = useState<string[]>([]);
     const [fails, setFails] = useState<string[]>([]);
 
+    const router = useRouter();
     async function convert() {
         const token = secureLocalStorage.getItem('accessToken') as string;
-        console.log('token is '+ token);
+        console.log('token is ' + token);
         setLoading(true);
 
         const trackIds: string[] = [];
@@ -40,6 +42,8 @@ export default function Page() {
                 }
             } else {
                 failedTracks.push(track);
+                router.replace('/auth');
+                throw new Error('Failed to fetch top tracks');
             }
         }
 
@@ -47,6 +51,15 @@ export default function Page() {
         setResultIds(trackIds);
         setLoading(false);
     }
+
+    useEffect(() => {
+        const storedToken = secureLocalStorage.getItem('accessToken') as string;
+        if (storedToken) {
+            // fetchTop(storedToken, selectedTimeRange, selectedType);
+        } else {
+            router.replace('/auth');
+        }
+    }, [])
 
     return (
         <div className='flex flex-col w-full'>
