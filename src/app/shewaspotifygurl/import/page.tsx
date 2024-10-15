@@ -1,9 +1,9 @@
 'use client';
-import { Tracks } from '@/models/Tracks';
 import React, { useState, useEffect } from 'react';
 import { FaLinode } from 'react-icons/fa6';
 import secureLocalStorage from 'react-secure-storage';
 import { useRouter } from 'next/navigation';
+import { Tracks } from '@/models/Search';
 
 export default function Page() {
     const [loading, setLoading] = useState<boolean>(false);
@@ -34,7 +34,6 @@ export default function Page() {
 
             if (response.ok) {
                 const data: Tracks = await response.json();
-                console.log(data.items);
                 const firstData = data.items.shift();
                 console.log(firstData);
                 if (firstData) {
