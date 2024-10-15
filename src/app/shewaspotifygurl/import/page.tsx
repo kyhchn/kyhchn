@@ -12,6 +12,7 @@ export default function Page() {
 
     async function convert() {
         const token = secureLocalStorage.getItem('accessToken') as string;
+        console.log('token is '+ token);
         setLoading(true);
 
         const trackIds: string[] = [];
