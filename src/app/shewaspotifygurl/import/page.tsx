@@ -1,3 +1,4 @@
+'use client';
 import { Tracks } from '@/models/Tracks';
 import React, { useState } from 'react';
 import { FaLinode } from 'react-icons/fa6';
