@@ -34,6 +34,7 @@ export default function Page() {
 
             if (response.ok) {
                 const data: Tracks = await response.json();
+                console.log(data);
                 const firstData = data.items.shift();
                 console.log(firstData);
                 if (firstData) {
